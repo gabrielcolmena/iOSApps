@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RainyShine/Constants.swift"
+            timestampString = "520722385.744072"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_825A5226E1DEB0D1AE18ACD36F54FB37_func4"
+                  moduleName = "RainyShine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielcolmenares/Work/Develop/ios/RainyShine/RainyShine/Constants.swift"
+                  timestampString = "520629473.261829"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RainyShine.CURRENT_WEATHER_URL.unsafeMutableAddressor : Swift.String"
+                  moduleName = "RainyShine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielcolmenares/Work/Develop/ios/RainyShine/RainyShine/Constants.swift"
+                  timestampString = "520629473.264122"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RainyShine/CurrentWeather.swift"
+            timestampString = "520745634.163108"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "downloadWeatherDetails(completed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RainyShine.CurrentWeather.downloadWeatherDetails (completed : () -&gt; ()) -&gt; ()"
+                  moduleName = "RainyShine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielcolmenares/Work/Develop/ios/RainyShine/RainyShine/CurrentWeather.swift"
+                  timestampString = "520745635.229787"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RainyShine.CurrentWeather.(downloadWeatherDetails (completed : () -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "RainyShine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielcolmenares/Work/Develop/ios/RainyShine/RainyShine/CurrentWeather.swift"
+                  timestampString = "520745635.23273"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
