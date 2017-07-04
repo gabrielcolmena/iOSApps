@@ -1,2 +1,11 @@
-# iOSApps
-This repo works as a personal portfolio for iOS apps
+## iOS Apps ##
+
+Personal iOS Apps portfolio working with
+
+- - - -
+
+* Auto-layout 
+* REST & Web Resquests  using Alamofire
+* CoreLocaton services 
+* Fullstack apps using Firebase
+ 
