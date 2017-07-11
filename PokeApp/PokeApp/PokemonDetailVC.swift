@@ -110,7 +110,7 @@ class PokemonDetailVC: UIViewController {
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func tabPressed(_ sender: Any) {
         
@@ -121,5 +121,9 @@ class PokemonDetailVC: UIViewController {
             bioTabView.isHidden = false
             movesTabView.isHidden = true
         }
+    }
+
+    @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
