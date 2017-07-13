@@ -1,3 +1,5 @@
+![Cover](cover.png)
+
 ## iOS Apps ##
 
 Personal iOS Apps portfolio working with
