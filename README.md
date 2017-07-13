@@ -9,4 +9,5 @@ Personal iOS Apps portfolio working with
 * CoreLocaton services 
 * Core Persistence and Core Data Framework
 * Fullstack apps using Firebase
+* Protocol Oriented Programming (POP) using swift
  

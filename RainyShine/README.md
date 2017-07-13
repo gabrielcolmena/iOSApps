@@ -1,3 +1,5 @@
+![Cover](cover.png)
+
 ## RainyShine app ##
 
 RainyShine is a weather app that uses 
