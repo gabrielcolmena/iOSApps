@@ -1,3 +1,5 @@
+![Cover](cover.png)
+
 ## Poke App ##
 
 PokeApp is a Pokemon pokedex app that uses

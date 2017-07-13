@@ -1,3 +1,5 @@
+![Cover](cover.png)
+
 ## RetroCalculator app ##
 
 RetroCalculator is a simple calculator app with a retro (pixel art) that uses

@@ -1,3 +1,5 @@
+![Cover](cover.png)
+
 ## DreamLister ##
 
 DreamLister is a CRUD app that uses
