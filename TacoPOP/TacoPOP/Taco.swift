@@ -16,7 +16,7 @@ enum TacoShell: Int{
 enum TacoProtein: String{
     case Beef = "Beef"
     case Chicken = "Chicken"
-    case Brisekt = "Brisekt"
+    case Brisket = "Brisket"
     case Fish = "Fish"
 }
 
@@ -69,7 +69,7 @@ struct Taco{
             case 2:
                 self._proteinId = TacoProtein.Chicken
             case 3:
-                self._proteinId = TacoProtein.Brisekt
+                self._proteinId = TacoProtein.Brisket
             case 4:
                 self._proteinId = TacoProtein.Fish
             default:

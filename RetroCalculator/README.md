@@ -1,4 +1,4 @@
-![Cover](cover.png)
+![Cover](../covers/retrocalculator.png)
 
 ## RetroCalculator app ##
 

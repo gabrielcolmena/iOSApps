@@ -6,11 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Better_Together_Caps.ttf">
             <string>BetterTogether-Caps</string>
+        </array>
+        <array key="ionicons.ttf">
+            <string>Ionicons</string>
         </array>
     </customFonts>
     <scenes>
@@ -26,57 +30,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taco" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-Sc-P2d">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-PZ-HT4" customClass="HeaderView" customModule="TacoPOP" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="D6y-WA-fdp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taco POP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iV-hE-M9R">
-                                        <rect key="frame" x="119" y="35" width="138" height="45"/>
+                                        <rect key="frame" x="119.5" y="35" width="137.5" height="45"/>
                                         <fontDescription key="fontDescription" name="BetterTogether-Caps" family="Better Together" pointSize="45"/>
-                                        <color key="textColor" red="0.5" green="0.30048325170536105" blue="0.06120354329255151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMK-z6-Txg">
+                                        <rect key="frame" x="8" y="30" width="30" height="42"/>
+                                        <fontDescription key="fontDescription" name="Ionicons" family="Ionicons" pointSize="30"/>
+                                        <state key="normal" title="">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.51006696428571419" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.7411492931256638" green="0.35550021962186396" blue="0.47921305111352047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="6iV-hE-M9R" secondAttribute="bottom" id="76b-u7-2kL"/>
-                                    <constraint firstItem="6iV-hE-M9R" firstAttribute="top" secondItem="BCN-PZ-HT4" secondAttribute="top" constant="35" id="EJR-Wm-owb"/>
-                                    <constraint firstItem="6iV-hE-M9R" firstAttribute="centerX" secondItem="BCN-PZ-HT4" secondAttribute="centerX" id="QLM-xY-ti3"/>
+                                    <constraint firstAttribute="trailing" secondItem="D6y-WA-fdp" secondAttribute="trailing" id="8lZ-43-guK"/>
+                                    <constraint firstAttribute="height" constant="80" id="D1g-aI-pQd"/>
+                                    <constraint firstItem="BMK-z6-Txg" firstAttribute="leading" secondItem="BCN-PZ-HT4" secondAttribute="leading" constant="8" id="EYC-ZJ-bSH"/>
+                                    <constraint firstAttribute="bottom" secondItem="6iV-hE-M9R" secondAttribute="bottom" id="J8n-p0-7we"/>
+                                    <constraint firstItem="D6y-WA-fdp" firstAttribute="top" secondItem="BCN-PZ-HT4" secondAttribute="top" id="NhL-Cd-hBt"/>
+                                    <constraint firstItem="D6y-WA-fdp" firstAttribute="leading" secondItem="BCN-PZ-HT4" secondAttribute="leading" id="Yz8-QX-ZLU"/>
+                                    <constraint firstAttribute="bottom" secondItem="D6y-WA-fdp" secondAttribute="bottom" id="iba-Cn-lTP"/>
+                                    <constraint firstItem="6iV-hE-M9R" firstAttribute="centerX" secondItem="BCN-PZ-HT4" secondAttribute="centerX" id="jdp-19-Df6"/>
+                                    <constraint firstAttribute="bottom" secondItem="BMK-z6-Txg" secondAttribute="bottom" constant="8" id="yK3-jm-x7t"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f14-CK-mbg">
-                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vJl-E7-1WV">
+                                <rect key="frame" x="26" y="90" width="323" height="567"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="10O-Dy-vOm">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="10O-Dy-vOm" id="ZPX-ex-pHQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4lu-6D-mTg">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="mhi-As-dFm">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XdO-Sc-P2d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5WD-S8-D1V"/>
-                            <constraint firstItem="XdO-Sc-P2d" firstAttribute="leading" secondItem="f14-CK-mbg" secondAttribute="leading" id="6WK-g4-1lc"/>
-                            <constraint firstAttribute="trailing" secondItem="f14-CK-mbg" secondAttribute="trailing" id="9J1-v7-FE2"/>
-                            <constraint firstItem="f14-CK-mbg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9b7-fz-nwu"/>
-                            <constraint firstItem="BCN-PZ-HT4" firstAttribute="top" secondItem="XdO-Sc-P2d" secondAttribute="top" id="AAY-hS-83W"/>
-                            <constraint firstItem="XdO-Sc-P2d" firstAttribute="trailing" secondItem="f14-CK-mbg" secondAttribute="trailing" id="NRX-h0-ibu"/>
-                            <constraint firstItem="f14-CK-mbg" firstAttribute="top" secondItem="BCN-PZ-HT4" secondAttribute="bottom" id="a05-6L-YwT"/>
-                            <constraint firstItem="BCN-PZ-HT4" firstAttribute="trailing" secondItem="f14-CK-mbg" secondAttribute="trailing" id="iTo-Wf-dHx"/>
-                            <constraint firstItem="BCN-PZ-HT4" firstAttribute="leading" secondItem="f14-CK-mbg" secondAttribute="leading" id="kby-nr-A4Z"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f14-CK-mbg" secondAttribute="bottom" id="pMr-dI-L46"/>
-                            <constraint firstItem="XdO-Sc-P2d" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="v0e-Zh-YbM"/>
+                            <constraint firstAttribute="trailing" secondItem="BCN-PZ-HT4" secondAttribute="trailing" id="08S-ai-kTS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vJl-E7-1WV" secondAttribute="trailing" constant="10" id="BJA-Uz-JX1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vJl-E7-1WV" secondAttribute="bottom" constant="10" id="Nmp-6O-mii"/>
+                            <constraint firstItem="BCN-PZ-HT4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PpJ-y3-pMq"/>
+                            <constraint firstItem="vJl-E7-1WV" firstAttribute="top" secondItem="BCN-PZ-HT4" secondAttribute="bottom" constant="10" id="WrX-6x-wrp"/>
+                            <constraint firstItem="vJl-E7-1WV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Z67-cw-k0f"/>
+                            <constraint firstItem="BCN-PZ-HT4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="upw-xf-fhn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="vJl-E7-1WV" id="7BQ-Am-zb8"/>
                         <outlet property="headerView" destination="BCN-PZ-HT4" id="ILg-nk-fab"/>
                     </connections>
                 </viewController>
@@ -86,6 +106,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="taco" width="470" height="403"/>
+        <image name="header" width="750" height="161"/>
     </resources>
 </document>

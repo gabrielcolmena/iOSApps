@@ -1,4 +1,4 @@
-![Cover](cover.png)
+![Cover](../covers/pokedex.png)
 
 ## Poke App ##
 

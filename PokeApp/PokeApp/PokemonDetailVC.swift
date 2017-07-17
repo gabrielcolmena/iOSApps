@@ -100,6 +100,8 @@ class PokemonDetailVC: UIViewController {
             
             nextEvolutionLbl.text = "No evolutions"
             nextEvolutionImage.isHidden = true
+            nextEvoImageLoading.stopAnimating()
+            nextEvoImageLoading.isHidden = true
             
         }else{
             nextEvolutionImage.isHidden = false
