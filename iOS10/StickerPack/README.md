@@ -1,4 +1,4 @@
-![Cover](cover.png)
+![Cover](../../covers/stickerpack.png)
 
 ## Pokemon Stickers app ##
 

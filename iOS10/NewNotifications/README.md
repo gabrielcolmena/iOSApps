@@ -1,4 +1,4 @@
-![Cover](../covers/newnotifications.png)
+![Cover](../../covers/newnotifications.png)
 
 ## New Notifications ##
 
