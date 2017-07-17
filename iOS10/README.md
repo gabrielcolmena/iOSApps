@@ -1,4 +1,4 @@
-![Cover](cover.png)
+![Cover](../covers/newfeatures.png)
 
 ## iOS 10 new features ##
 
