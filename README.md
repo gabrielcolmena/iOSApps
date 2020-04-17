@@ -2,7 +2,7 @@
 
 ## iOS Apps ##
 
-Personal iOS Apps portfolio working with
+iOS Apps personal portfolio, includes: 
 
 - - - -
 
